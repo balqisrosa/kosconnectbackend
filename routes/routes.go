@@ -25,6 +25,17 @@ func UserRoutes(router *gin.Engine) {
 	}
 }
 
+<<<<<<< HEAD
+func CategoryRoutes(router *gin.Engine) {
+	api := router.Group("/api/categories")
+	{
+		api.POST("/", middlewares.JWTAuthMiddleware(), controllers.CreateCategory)
+		api.GET("/", middlewares.JWTAuthMiddleware(), controllers.GetAllCategories)
+		api.GET("/:id", middlewares.JWTAuthMiddleware(), controllers.GetCategoryByID)
+		api.PUT("/:id", middlewares.JWTAuthMiddleware(), controllers.UpdateCategory)
+		api.DELETE("/:id", middlewares.JWTAuthMiddleware(), controllers.DeleteCategory)
+	}
+=======
 func CustomFacilityRoutes(router *gin.Engine) {
     api := router.Group("/api/customFacilities")
     {
@@ -34,6 +45,7 @@ func CustomFacilityRoutes(router *gin.Engine) {
         api.PUT("/:id", middlewares.JWTAuthMiddleware(), controllers.UpdateCustomFacility)
         api.DELETE("/:id", middlewares.JWTAuthMiddleware(), controllers.DeleteCustomFacility)
     }
+<<<<<<< HEAD
 }
 
 func CategoryRoutes(router *gin.Engine) {
@@ -45,4 +57,7 @@ func CategoryRoutes(router *gin.Engine) {
 		api.PUT("/:id", middlewares.JWTAuthMiddleware(), controllers.UpdateCategory)
 		api.DELETE("/:id", middlewares.JWTAuthMiddleware(), controllers.DeleteCategory)
 	}
+=======
+>>>>>>> f2fce078d6b6d3e4d4f618c2160ccd72a7082cb8
+>>>>>>> c200e1e479e1483e910dd08ad310eb3e9fc38c25
 }
