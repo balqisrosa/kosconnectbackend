@@ -28,6 +28,8 @@ func main() {
 	// Memanggil route untuk user (create, update, delete, get)
 	routes.UserRoutes(router) // Pastikan ini ada
 
+	routes.CategoryRoutes(router)
+
 	// Start server
 	port := os.Getenv("PORT")
 	if port == "" {

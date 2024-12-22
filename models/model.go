@@ -9,3 +9,9 @@ type User struct {
 	Role     string             `bson:"role" json:"role"`
 	Password string             `bson:"password" json:"password"`
 }
+
+type Category struct {
+	ID   primitive.ObjectID `bson:"_id,omitempty" json:"id"`
+	Name string             `bson:"name" json:"name"`
+	Slug string             `bson:"slug" json:"slug"`
+}
