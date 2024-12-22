@@ -10,25 +10,14 @@ type User struct {
 	Password string             `bson:"password" json:"password"`
 }
 
-<<<<<<< HEAD
 type Category struct {
 	ID   primitive.ObjectID `bson:"_id,omitempty" json:"id"`
 	Name string             `bson:"name" json:"name"`
 	Slug string             `bson:"slug" json:"slug"`
 }
-=======
+
 type CustomFacility struct {
     ID    string  `json:"id" bson:"_id"`
     Name  string  `json:"name" bson:"name"`
     Price float64 `json:"price" bson:"price"`
 }
-<<<<<<< HEAD
-
-type Category struct {
-	ID   primitive.ObjectID `bson:"_id,omitempty" json:"id"`
-	Name string             `bson:"name" json:"name"`
-	Slug string             `bson:"slug" json:"slug"`
-}
-=======
->>>>>>> f2fce078d6b6d3e4d4f618c2160ccd72a7082cb8
->>>>>>> c200e1e479e1483e910dd08ad310eb3e9fc38c25
